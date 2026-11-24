@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lluvia de estrellas</title>
+  <style>
+    body { margin: 0; padding: 12px; background: #020617; color: #e2e8f0; font: 16px/1.5 system-ui, sans-serif; display: grid; justify-items: center; gap: 8px; }
+    canvas { width: 100%; max-width: 300px; height: auto; border: 2px solid #64748b; border-radius: 8px; touch-action: none; }
+    .controles { display: flex; gap: 12px; }
+    .controles button { min-width: 64px; min-height: 44px; font-size: 20px; border-radius: 8px; border: 1px solid #64748b; background: #1e293b; color: #e2e8f0; }
+  </style>
+</head>
+<body>
+  <canvas id="juego" width="480" height="640" tabindex="0" aria-label="Lluvia de estrellas. Hacé clic para jugar; flechas o A y D para moverte, R para reiniciar."></canvas>
+  <div class="controles">
+    <button type="button" data-direccion="izquierda" aria-label="Mover a la izquierda">◀</button>
+    <button type="button" data-direccion="derecha" aria-label="Mover a la derecha">▶</button>
+  </div>
+  <script src="juego.js"></script>
+</body>
+</html>
